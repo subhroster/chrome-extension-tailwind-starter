@@ -1,0 +1,34 @@
+# Dependency directories
+node_modules/
+
+# Output directories
+dist/
+build/
+
+# Ignore environment files
+.env
+
+# Ignore lockfiles
+package-lock.json
+yarn.lock
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+
+# Log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache and build artifacts
+.cache/
+.vite/
+
+# Tailwind CSS build files
+tailwind.config.js

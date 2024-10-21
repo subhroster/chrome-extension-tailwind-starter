@@ -1,7 +1,7 @@
 {
   "name": "chrome-extension-tailwind-starter",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.0.1",
+  "description": "A streamlined starter template for building Chrome extensions with Tailwind CSS integration",
   "main": "popup.js",
   "dependencies": {
     "ansi-regex": "^6.1.0",
@@ -18,6 +18,7 @@
     "camelcase-css": "^2.0.1",
     "caniuse-lite": "^1.0.30001669",
     "chokidar": "^3.6.0",
+    "chrome-extension-tailwind-starter": "file:chrome-extension-tailwind-starter-1.0.0.tgz",
     "color-convert": "^2.0.1",
     "color-name": "^1.1.4",
     "commander": "^4.1.1",
@@ -105,14 +106,22 @@
     "wrap-ansi-cjs": "^7.0.0",
     "yaml": "^2.6.0"
   },
-  "devDependencies": {
-    "husky": "^9.1.6"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install",
-   "build:css": "echo 'Building CSS...' && tailwindcss -i ./popup.css -o ./dist/popup.css --minify && echo 'CSS built successfully'"
+    "build": "tailwindcss -i ./popup.css -o ./dist/popup.css --minify"
   },
-  "author": "",
-  "license": "ISC"
+  "keywords": ["chrome-extension", "tailwindcss", "starter-template", "web-development"],
+  "author": "Subhro Kar",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/subhroster/chrome-extension-tailwind-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/chrome-extension-tailwind-starter/issues"
+  },
+  "homepage": "https://github.com/yourusername/chrome-extension-tailwind-starter#readme",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  }
 }
